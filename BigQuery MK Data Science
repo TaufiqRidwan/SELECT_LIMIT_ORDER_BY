@@ -1,0 +1,12 @@
+/*SELECT * FROM telco_churn.customer_status*/
+/*SELECT customer_id, status, churn_reason FROM telco_churn.customer_status*/
+/*SELECT customer_id, cltv AS customer_lifetime_value, status FROM telco_churn.customer_status*/
+/*SELECT DISTINCT status FROM telco_churn.customer_status*/
+/*SELECT DISTINCT churn_category, churn_reason FROM telco_churn.customer_status*/
+/*SELECT * FROM telco_churn.customer_status LIMIT (5)*/
+/*SELECT customer_id, status, churn_reason FROM telco_churn.customer_status LIMIT (10)*/
+/*SELECT customer_id, cltv AS customer_lifetime_value, status FROM telco_churn.customer_status LIMIT (3)*/
+/*SELECT * FROM telco_churn.customer_status ORDER BY customer_id ASC*/
+/*SELECT * FROM telco_churn.customer_status ORDER BY cltv DESC*/
+/*SELECT * FROM telco_churn.customer_status ORDER BY customer_id ASC,cltv DESC*/
+SELECT custOmer_id, cltv AS customer_lifetime_value, status FROM telco_churn.customer_status ORDER BY cltv DESC LIMIT (10)
